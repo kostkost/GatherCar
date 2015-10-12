@@ -64,7 +64,7 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
     margin: auto;
-    padding: 0.4em 0.4em 0 0.4em;
+    padding: 0.4em 0.2em 0 0.2em;
 }
 .yellowMassageBox:after {
     display: block;
@@ -108,7 +108,6 @@ a:hover {
     height: 60px;    
 }
 .btn-success:hover {
-    color: #f0c852;
     border-color: #f0c852;
 }
 
@@ -142,11 +141,22 @@ a:hover {
 /* FOOTER */
 footer {
     background-color: #0f4359;
-    padding: 1em 0;
+    padding-top: 2em;
 }
-    footer .navbar-text {
+footer .col-sm-6 {
+margin-bottom: 2em;
+}
+footer img {
+    float: left;
+    margin-right: 20px;
+        margin-top: 0.5em;
+}
+footer a img {
+    margin-top: 0;
+}
+    footer p {
+        margin-top: 0.5em;
         color: #75b7a6;
-        margin-right: 0;
     }
     footer .white, footer a {
         color: #fff;
@@ -162,7 +172,7 @@ footer {
 
 /* autumn */
 .autumn {
-    margin-top: 80px;                                                  
+    margin-top: 80px; 
     background: url(../img/bg_1.jpg) top center;
     background-size: cover;
     height: 90vh;
@@ -178,45 +188,32 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
 }
+.autumn h1 {
+    margin: 4vh 0;
+}
 
 
 
 
 
-.top-2em {
-}
-.top-4em {
-    margin-top: 2em;
-}
-.top-6em {
-    margin-top: 4em;
-}
-.top-8em {
-    margin-top: 6em;
-}
-.top-10em {
-    margin-top: 8em;
-}
 
 
 /* LOWCOST */
-.lowcost .col-md-5 {
-    width: 20%;
-    height: 550px;
+.lowcost .col-sm-5 {
+    width: 19%;
+    display: inline-block;
+    vertical-align: bottom;
+    float: none;
 }
 
-.lowcost .col-md-5 .gray {
-    height: 90%;
-    position: absolute;
-    width: 90%;
-    padding: 20%;
+.lowcost .col-sm-5 .gray {
     text-align: center;
 }
 .lowcost .yellowMassageBox {
+    margin: 2em 0 1em 0;
 }
-.lowcost .col-md-5 img {
-    width: 90%;
-    position: absolute;
+.lowcost .col-sm-5 img {
+    width: 100%;
     bottom: 0;
 }
 
@@ -234,16 +231,21 @@ footer {
     color: #fff;
 }
 .lowcost a:hover {
-    color: #f0c852;
     text-decoration: none;
 }
+
+.lowcost h5:hover {
+    background: #5e9285;
+}
+
 .lowcost .col-sm-3 {
     text-align: center;
 }
 .lowcost .col-sm-3 .gray {
     border-radius: 4px;
     padding-top: 3em;
-    height: 45vh;
+    height: 70vh;
+    max-height: 350px;
 }
 .lowcost .col-sm-3 p {
     padding: 0 1em;
@@ -266,27 +268,27 @@ footer {
     background-position: right top;
     background-repeat: no-repeat;
 }
-.compare .col-md-6 {
+.compare .col-sm-6 {
     color: #fff;
     margin-top: 473px;
     background-color: #616161;
 }
-.compare .col-md-6:last-child {
+.compare .col-sm-6:last-child {
     color: #0f4359;
     text-transform: uppercase;
     background-color: #f0c852;
 }
-.compare .col-md-6 h4 {
+.compare .col-sm-6 h4 {
     padding-left: 1em;
 }
 
-.compare .col-md-4 {
-    height: 150px;
+.compare .col-sm-4 {
+    height: 100%;
 }
 .compare img {
     margin-bottom: 1em;
 }
-.compare .col-md-2 {
+.compare .col-sm-2 {
     height: 200px;
     background-image: url(../img/line.png);
     background-repeat: no-repeat;
@@ -295,7 +297,7 @@ footer {
 .compare .withoutLine {
     background: none;
 }
-.compare p:after {
+.compare .col-sm-4:after {
   content:""; 
   background: #aeaeae; 
   position: absolute; 
@@ -304,6 +306,11 @@ footer {
   width: 50%; 
   height: 1px;
 }
+
+
+
+
+
 
 .hightLevel {
     padding: 4em 0;
