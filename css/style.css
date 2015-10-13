@@ -267,6 +267,25 @@ footer a img {
     width: auto;
 }
 
+.lowcost .item .gray {
+    max-width: 50%;
+}
+.carousel-control.left {
+    background: none;
+}
+.carousel-control.right {
+    background: none;
+}
+.carousel-indicators {
+    bottom: -10px;
+}
+.carousel-indicators li {
+    background: #616161;
+}
+.carousel-indicators .active {
+    background: #75b7a6;
+}
+
 
 
 /* ALSO */
