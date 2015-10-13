@@ -268,7 +268,8 @@ footer a img {
 }
 
 .lowcost .item .gray {
-    max-width: 50%;
+    max-width: 200px;
+    height: 550px;
 }
 .carousel-control.left {
     background: none;
@@ -277,7 +278,7 @@ footer a img {
     background: none;
 }
 .carousel-indicators {
-    bottom: -10px;
+    bottom: -1em;
 }
 .carousel-indicators li {
     background: #616161;
@@ -289,7 +290,7 @@ footer a img {
 
 
 /* ALSO */
-.lowcost h5 {
+.also h5 {
     width: 90%;
     position: absolute;
     bottom: 0;
@@ -299,27 +300,27 @@ footer a img {
     border-radius: 0 0 4px 4px;
     margin: 0;
 }
-.lowcost a {
+.also a {
     color: #fff;
 }
-.lowcost a:hover {
+.also a:hover {
     text-decoration: none;
 }
 
-.lowcost h5:hover {
+.also h5:hover {
     background: #5e9285;
 }
 
-.lowcost .col-sm-3 {
+.also .col-sm-3 {
     text-align: center;
 }
-.lowcost .col-sm-3 .gray {
+.also .col-sm-3 .gray {
     border-radius: 4px;
     padding-top: 3em;
     height: 70vh;
     max-height: 350px;
 }
-.lowcost .col-sm-3 p {
+.also .col-sm-3 p {
     padding: 0 1em;
 }
 
