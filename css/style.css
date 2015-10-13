@@ -1,37 +1,59 @@
 @font-face {
-    font-family: HelveticaNeueLight;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.otf);
-}
-@font-face {
-    font-family: HelveticaNeueMedium;
-    src: url(../fonts/HelveticaNeueCyr-Medium.otf);
-}
-@font-face {
-    font-family: HelveticaNeueRoman;
-    src: url(../fonts/HelveticaNeueCyr-Roman.otf);
+ font-family: Light;
+ src: url("../fonts/HelveticaLight/HelveticaLight.eot");
+ src: url("../fonts/HelveticaLight/HelveticaLight.eot#iefix") format("embedded-opentype"),
+      url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"),
+      url("../fonts/HelveticaLight/HelveticaLight.ttf") format("truetype");
+ font-weight: normal;
+ font-style: normal;
 }
 
+@font-face {
+ font-family: HMedium;
+ src: url("../fonts/HelveticaLight/HelveticaMedium.eot");
+ src: url("../fonts/HelveticaLight/HelveticaMedium.eot#iefix") format("embedded-opentype"),
+      url("../fonts/HelveticaLight/HelveticaMedium.woff") format("woff"),
+      url("../fonts/HelveticaLight/HelveticaMedium.ttf") format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: Regular;
+ src: url("../fonts/HelveticaLight/HelveticaRegular.eot");
+ src: url("../fonts/HelveticaLight/HelveticaRegular.eot#iefix") format("embedded-opentype"),
+      url("../fonts/HelveticaLight/HelveticaRegular.woff") format("woff"),
+      url("../fonts/HelveticaLight/HelveticaRegular.ttf") format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+
+
 body {
-    font-family: HelveticaNeueLight, sans-serif;
+    font-family: Light;
     color: #0f4359;
 }
 h1, h3 {
     text-transform: uppercase;
 }
-h1 {
-    font-size: 45px;
-}
-h2 {
-    font-size: 25px;
-}
-h3 {
-    font-size: 28px;
-}
-h4 {
-    font-size: 21px;
+
+
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 21px;
+    }
 }
 h5 {
-    font-family: HelveticaNeueRoman, sans-serif;
+    font-family: Regular, sans-serif;
 }
 p {
     font-size: 17px;
@@ -99,13 +121,21 @@ a:hover {
     border: 3px solid #fff;
     margin: auto;
     padding: 0.8em 0;
-    font-family: HelveticaNeueRoman, sans-serif;
+    font-family: Regular, sans-serif;
     font-family: 14px;
     text-transform: uppercase;
 }
 .btn-lg {
-    width: 350px;
-    height: 60px;    
+    width: 270px;
+    height: 50px;    
+    font-size: 14px;
+}
+@media (min-width: 768px) { 
+    .btn-lg {
+        width: 350px;
+        height: 60px;    
+        font-size: 18px;
+    }
 }
 .btn-success:hover {
     border-color: #f0c852;
@@ -119,11 +149,20 @@ a:hover {
     padding: 0.2em;
     background-color: #fff;
 }
+.navbar-brand {
+    padding-bottom: 3.5em;
+}
+@media (min-width: 768px) { 
     .navbar-brand {
+        padding-bottom: 3em;
         padding-top: 0.4em;
     }
+}
+.navbar span {
+    float: left;
+}
         .navbar a {
-            font-family: HelveticaNeueMedium, sans-serif;
+            font-family: HMedium, sans-serif;
             font-size: 21px;
             color: #75b7a6;
             letter-spacing: 0.03em;
@@ -162,7 +201,7 @@ footer a img {
         color: #fff;
     }
     footer .phone {
-        font-family: HelveticaNeueMedium, sans-serif;
+        font-family: HMedium, sans-serif;
         font-size: 21px;
         letter-spacing: 0.03em;
     }
@@ -173,50 +212,64 @@ footer a img {
 /* autumn */
 .autumn {
     margin-top: 80px; 
-    background: url(../img/bg_1.jpg) top center;
+    background: url(../img/bg_1.jpg) bottom center;
     background-size: cover;
-    height: 90vh;
-    text-align: center;
+    height: 88vh;
+    min-height: 600px;
 }
 .autumn .container {
-    width: 100%;
+    position: relative;
+    height: 100%;;
+    text-align: center;
+}
+.autumn .row {
     position: absolute;
     bottom: 0;
+    width: 100%;
+}
+@media (min-width: 768px) { 
+    .autumn img {
+        margin: 30px 15px;
+    }
 }
 .autumn img {
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 30px 10px;
 }
-.autumn h1 {
-    margin: 4vh 0;
+@media (min-width: 1400px) { 
+    .autumn h1 {
+        margin: 1em auto;
+    }
+    .autumn .btn {
+        margin: 1em auto;
+    }
 }
-
-
-
 
 
 
 
 /* LOWCOST */
-.lowcost .col-sm-5 {
-    width: 19%;
-    display: inline-block;
-    vertical-align: bottom;
-    float: none;
+.lowcost .flex {
+    display: flex;
+    justify-content: space-around;
+    padding:  1em;
 }
-
-.lowcost .col-sm-5 .gray {
-    text-align: center;
+.lowcost .gray {
+    max-width: 18%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    margin: 0 1em;
 }
 .lowcost .yellowMassageBox {
-    margin: 2em 0 1em 0;
+    margin: 1em auto;
 }
-.lowcost .col-sm-5 img {
-    width: 100%;
-    bottom: 0;
+.lowcost .flex img {
+    width: auto;
 }
 
+
+
+/* ALSO */
 .lowcost h5 {
     width: 90%;
     position: absolute;
