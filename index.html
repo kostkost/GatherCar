@@ -29,7 +29,7 @@
     <nav class="navbar navbar-white navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="http://gathercar.com/">
                     <img alt="GatherCar" src="img/logo.png">
                 </a>
                 <p class="navbar-text"><span class="visible-xs">#GATHERCAR &nbsp</span>Інноваційний сервіс таксі з<br>попутниками у Львові</p>
@@ -372,12 +372,14 @@
                         </div>
                         <div class="media-body">
                             <p>Після індивідуального розгляду Вашого звернення буде прийнято невідкладні заходи щодо оптимізації процесу обслуговування. Ми гарантуємо повернення сплаченої оплати за проїзд. Крім того, ми подаруємо безкоштовну наступну поїздку, щоб Ви переконались, що зауваження повністю враховані.</p>
-                            <a href="#"><img class="social" src="img/social.png"></a>
+                            <a class="hidden-xs" href="#"><img class="social" src="img/social.png"></a>
                         </div>
+                        <button type="button" class="btn btn-success hidden-md hidden-lg">Повідомити коли запрацює</button>
                     </div>
-                  </div>
-                  <div class="col-md-4 col-md-offset-2">
                       
+                  </div>
+                  
+                  <div class="col-md-4 col-md-offset-2 hidden-xs hidden-sm">  
                       <div class="col-sm-12 cyan">    
                             <h2>Почніть їздити дешевше</h2>
                             <div class="media">
@@ -409,6 +411,45 @@
                       </div>
                   </div>
               </div>
+              
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-md">ModalFORM</button>
+
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+         <div class="col-sm-12 cyanmodal">    
+                            <h2>Почніть їздити дешевше</h2>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="img/prize.png">
+                                </div>
+                                <div class="media-body">
+                                    <p>Зареєструйтесь зараз та прийміть участь в розіграші місячного абонементу</p>
+                                </div>
+                            </div>
+                      </div>
+                            <form>
+                              <div class="form-group">
+                                <label for="inputName">Ваше ім'я</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Ім'я та прізвище">
+                              </div>
+                              <div class="form-group">
+                                <label for="inputTel">Ваш телефон</label>
+                                <input type="tel" class="form-control" id="inputTel" placeholder="Телефон">
+                              </div>
+                              <div class="form-group">
+                                <label for="inputEmail1">Ваша електронна адреса</label>
+                                <input type="email" class="form-control" id="inputEmail1" placeholder="Електронна адреса">
+                              </div>
+                                <button type="button" class="btn btn-success">Повідомити коли запрацює</button>
+                            </form>
+        
+    </div>
+  </div>
+</div>      
+              
           </div>
       </section>
       
@@ -417,7 +458,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-4 hidden-sm hidden-xs">
-                      <a href="#">
+                      <a href="http://gathercar.com/">
                         <img alt="GatherCar" src="img/logo.png">
                       </a>
                       <p class="white">Інноваційний сервіс таксі з попутниками у Львові</p>

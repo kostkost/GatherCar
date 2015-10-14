@@ -438,12 +438,117 @@ footer a img {
     background: url(../img/form_bg.png) center bottom no-repeat;
     background-size: cover;
     height: 685px;
+    border-top: 11px solid #f1c953;
+    padding: 0 10px;
+}
+.hightLevel .col-md-4:before {
+  position: absolute;
+    left: 0;
+  content:""; 
+  display: block;
+  background: #f1c953;
+  width: 11px; 
+  height: 95%;
+}
+.hightLevel .col-md-4:after {
+  position: absolute;
+right: 0;
+  content:""; 
+  display: block;
+  background: #f1c953; 
+  width: 11px; 
+  height: 95%;
+}
+.hightLevel h2{
+    border-bottom: 1px solid #5e9285; 
+}
+.hightLevel h2:after {
+    margin-top: 0.5em;
+  content:""; 
+  display: block;
+  background: #5e9285; 
+  width: 100%; 
+  height: 1px;
+}
+.hightLevel p {
+    color: #323638;
 }
 .hightLevel .cyan {
     background-color: #75b7a6;
-    border-top: 10px solid #f1c953;
+    position: relative;
+    padding: 0 2em;
+    margin-bottom: 80px;
+}
+.hightLevel .cyan:after {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: "";
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 125px solid transparent;
+	border-top: 50px solid #75b7a6;
+}
+.hightLevel label {
+    color: #616161;
+    font-family: Light, sans-serif;
+}
+.hightLevel input:focus {
+    border-color: #f1c953;
 }
 .hightLevel .btn-success {
     font-size: 14px;
     padding: 1em;
+}
+.hightLevel .cyan .btn-success {
+    margin-top: 50px;
+}
+
+
+
+
+.close {
+    position: absolute;
+    right: -30px;
+    color: #ff5454;
+    font-family: Regular, sans-serif;
+    font-weight: 900;
+}
+.modal-content {
+    border: 6px solid #f1c953;
+    box-sizing: border-box;
+}
+.modal-content:after {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: "";
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 125px solid transparent;
+	border-top: 50px solid #fff;
+}
+.modal-content:before {
+    position: absolute;
+    left: -6px;
+    bottom: -60px;
+    display: block;
+    content: "";
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 150px solid transparent;
+	border-top: 60px solid #f1c953;
+}
+.cyanmodal {
+    background-color: #75b7a6;
+    position: relative;
+    padding: 1em;
+    margin: 0 auto 1em auto;
+}
+.modal-content form {
+    padding: 0 1em;
+    margin: 1em auto;
 }
