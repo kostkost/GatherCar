@@ -117,15 +117,29 @@ a:hover {
     background: #eee;
 }
 
-
+.btn-info {
+    font-size: 14px;
+    padding: 1em;
+    background-color: #0f4359;
+    display: block;
+    border-radius: 40px;
+    margin: auto;
+    font-family: Regular, sans-serif;
+    text-transform: uppercase;
+}
+.btn-info:hover {
+    background-color: #0f4359;
+    border: 1.5px solid #fff;
+}
 .btn-success {
+    background-color: #4bb257;
     display: block;
     border-radius: 40px;
     border: 3px solid #fff;
     margin: auto;
     padding: 0.8em 0;
     font-family: Regular, sans-serif;
-    font-family: 14px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 .btn-lg {
@@ -459,10 +473,10 @@ right: 0;
   width: 11px; 
   height: 95%;
 }
-.hightLevel h2{
+.border-bottomDarkCyan {
     border-bottom: 1px solid #5e9285; 
 }
-.hightLevel h2:after {
+.border-bottomDarkCyan:after {
     margin-top: 0.5em;
   content:""; 
   display: block;
@@ -490,24 +504,31 @@ right: 0;
 	border-right: 125px solid transparent;
 	border-top: 50px solid #75b7a6;
 }
-.hightLevel label {
+label {
     color: #616161;
     font-family: Light, sans-serif;
 }
-.hightLevel input:focus {
+.form-control:focus {
     border-color: #f1c953;
 }
-.hightLevel .btn-success {
+form .btn-success, .hightLevel .btn-success{
     font-size: 14px;
     padding: 1em;
 }
-.hightLevel .cyan .btn-success {
+.hightLevel form .btn-success {
     margin-top: 50px;
 }
 
 
 
 
+/* MODALS */
+
+
+/* FORM */
+.modal {
+    background: rgba(15,67,89,0.8);
+}
 .close {
     position: absolute;
     right: -30px;
@@ -517,7 +538,67 @@ right: 0;
 }
 .modal-content {
     border: 6px solid #f1c953;
-    box-sizing: border-box;
+}
+.form-modal-md .modal-content:after {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: "";
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 125px solid transparent;
+	border-top: 50px solid #fff;
+}
+.form-modal-md  .modal-content:before {
+    position: absolute;
+    left: -6px;
+    bottom: -60px;
+    display: block;
+    content: "";
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 150px solid transparent;
+	border-top: 60px solid #f1c953;
+}
+.form-modal-md .cyanmodal {
+    background-color: #75b7a6;
+    position: relative;
+    padding: 1em;
+    margin: 0 auto 1em auto;
+}
+.modal-content form {
+    padding: 0 1em;
+    margin: 1em auto;
+}
+
+
+
+
+
+
+
+/* THNX */
+.modal .thnx-media .media-object {
+    margin: 2em;
+} 
+.modal .thnx-media .media-body {
+    padding: 2em;
+    position: relative;
+}
+.thnx-modal-md .border-bottomGray {
+    font-size: 15px;
+    color: #a0a0a0;
+}
+.thnx-modal-md .border-bottomGray:after {
+  content:""; 
+  background: #aeaeae; 
+  position: absolute; 
+  bottom: 1.5em; 
+  left: 2em; 
+  width: 40%; 
+  height: 1px;
 }
 .modal-content:after {
     position: absolute;
@@ -528,7 +609,7 @@ right: 0;
 	height: 0;
 	border-left: 0px solid transparent;
 	border-right: 125px solid transparent;
-	border-top: 50px solid #fff;
+	border-top: 50px solid #75b7a6;
 }
 .modal-content:before {
     position: absolute;
@@ -542,13 +623,29 @@ right: 0;
 	border-right: 150px solid transparent;
 	border-top: 60px solid #f1c953;
 }
+.thnx-modal-md .cyanmodal img {
+    margin: 1em;
+}
 .cyanmodal {
     background-color: #75b7a6;
     position: relative;
     padding: 1em;
-    margin: 0 auto 1em auto;
+    margin: 0 auto;
 }
-.modal-content form {
-    padding: 0 1em;
-    margin: 1em auto;
+
+
+
+/* STANDARTS */
+.standarts {
+    position: relative;
+    padding: 1em;
+}
+.border-bottomGray:after {
+  content:""; 
+  background: #aeaeae; 
+  position: absolute; 
+  bottom: 1em; 
+  left: 2em; 
+  width: 40%; 
+  height: 1px;
 }

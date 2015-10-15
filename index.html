@@ -25,6 +25,9 @@
       
       
       
+      
+      
+      
 <!--      HEADER    -->
     <nav class="navbar navbar-white navbar-fixed-top">
         <div class="container">
@@ -42,21 +45,28 @@
       
       
       
+      
+      
+      
 <!--      AUTUMN        -->
     <section class="autumn bottom-3em">
         <div class="container">
             <div class="row">
                 <div class="yellowMassageBox">Вже цієї осені у Львові</div>
                 <h1>Сервіс таксі з попутниками<span class="hidden-xs">, які ділять порівну вартість поїздки</span></h1>
-                <a type="button" class="btn btn-success btn-lg ">Повідомити коли запрацює</a>
-                <a href="#"><img src="img/fb.png"></a>
-                <a href="#"><img src="img/vk.png"></a>
+                <a type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target=".form-modal-md">Повідомити коли запрацює</a>
+                <a href="https://www.facebook.com/GatherCar-898764876825599/" target="_blank"><img src="img/fb.png"></a>
+                <a href="https://vk.com/gathercar" target="_blank"><img src="img/vk.png"></a>
+<!--
                 <a href="#"><img src="img/g+.png"></a>
                 <a href="#"><img src="img/inst.png"></a>
+-->
             </div>
         </div>
     </section>
     
+      
+      
       
       
       
@@ -185,6 +195,11 @@
       
       
       
+      
+      
+      
+      
+      
 <!--      ALSO      -->
       <section class="also bottom-3em">
           <div class="container">
@@ -229,6 +244,9 @@
      
       
       
+      
+      
+      
 <!--      ORANGE    -->
       <section class="orange">
           <div class="container">
@@ -238,6 +256,9 @@
               </div>
           </div>
       </section>
+      
+      
+      
       
       
       
@@ -255,6 +276,18 @@
               </div>
           </div>
       </section>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
 <!--      COMPARE   -->
       <section class="compare bottom-3em">
@@ -336,7 +369,7 @@
                       <h4>Іноваційно</h4>
                       <img src="img/starsFive.png">
                       <p>Зручний мобільний додаток з широким функціоналом</p>
-                      <a href=""><img src="img/googleplay.png"></a>
+<!--                      <a href=""><img src="img/googleplay.png"></a>-->
                   </div>
               </div>
           </div>
@@ -345,6 +378,9 @@
       
       
       
+      
+      
+<!--      HIGHT LEVEL -->
       <section class="hightLevel">
           <div class="container">
               <div class="row">
@@ -355,7 +391,7 @@
                             <img class="media-object" src="img/rules.png">
                         </div>
                         <div class="media-body">
-                            <p>Обслуговування пасажирів проводиться згідно <a href="#">Правил</a> обслуговування пасажирів, <a href="#">Стандартів</a> компанії та згідно чинного законодавства.</p>
+                            <p>Обслуговування пасажирів проводиться згідно <a href=""  data-toggle="modal" data-target=".standarts-modal-md">Правил</a> обслуговування пасажирів, <a href=""  data-toggle="modal" data-target=".standarts-modal-md">Стандартів</a> компанії та згідно чинного законодавства.</p>
                         </div>
                     </div>
                     <div class="media">
@@ -374,14 +410,14 @@
                             <p>Після індивідуального розгляду Вашого звернення буде прийнято невідкладні заходи щодо оптимізації процесу обслуговування. Ми гарантуємо повернення сплаченої оплати за проїзд. Крім того, ми подаруємо безкоштовну наступну поїздку, щоб Ви переконались, що зауваження повністю враховані.</p>
                             <a class="hidden-xs" href="#"><img class="social" src="img/social.png"></a>
                         </div>
-                        <button type="button" class="btn btn-success hidden-md hidden-lg">Повідомити коли запрацює</button>
+                        <button type="button" class="btn btn-success hidden-md hidden-lg" data-toggle="modal" data-target=".form-modal-md">Повідомити коли запрацює</button>
                     </div>
                       
                   </div>
                   
                   <div class="col-md-4 col-md-offset-2 hidden-xs hidden-sm">  
                       <div class="col-sm-12 cyan">    
-                            <h2>Почніть їздити дешевше</h2>
+                            <h2 class="border-bottomDarkCyan">Почніть їздити дешевше</h2>
                             <div class="media">
                                 <div class="media-left">
                                     <img class="media-object" src="img/prize.png">
@@ -411,16 +447,119 @@
                       </div>
                   </div>
               </div>
-              
-<!-- Small modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-md">ModalFORM</button>
+          </div>
+      </section>
+      
+    
+      
+<!--      FOOTER    -->
+      <footer> 
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 hidden-sm hidden-xs">
+                      <a href="http://gathercar.com/">
+                        <img alt="GatherCar" src="img/logo.png">
+                      </a>
+                      <p class="white">Інноваційний сервіс таксі з попутниками у Львові</p>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                        <img alt="GatherCar" src="img/phoneWhite.png">
+                      <p>Телефон “Лінії підтримки”<br><a class="navbar-link phone" href="tel:+380977117765">+38097 7117765</a></p>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                      <img alt="GatherCar" src="img/map.png">
+                      <p>Адреса офісу:<br><a href="https://goo.gl/maps/Hwv64GCWLEG2" target="_blank" class="navbar-link">м.Львів, вул.В.Великого, 50/104</a></p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+      
+      
+      
+      
+      
+      
+<!--       MODALS       -->
+      
+        <!-- THNX modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".thnx-modal-md">Modal thnx</button>-->
 
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+<div class="modal fade thnx-modal-md" tabindex="-1" role="dialog" aria-labelledby="thnxSmallModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>  
+                <div class="media thnx-media">
+                    <div class="media-left">
+                        <img class="media-object" src="img/ava.png">
+                    </div>
+                    <div class="media-body">
+                        <p>Дякуємо що скористались нашими послугами! Ми зв’яжемось з вами вже дуже скоро:)</p>
+                        <h2>Mary Doe</h2>
+                        <span class="border-bottomGray">Менеджер по роботі з клієнтами</span>
+                    </div>
+                </div>
+        <div class="cyanmodal text-center">   
+            <h4>Розкажіть друзям про #gathercar</h4>
+            <img src="img/social.png">
+        </div>
+        
+    </div>
+  </div>
+</div>      
+      
+      
+      
+      
+       <!-- standarts modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".standarts-modal-md">Modal standarts</button>-->
+
+<div class="modal fade standarts-modal-md" tabindex="-1" role="dialog" aria-labelledby="standartsSmallModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>  
+                
+        <div class="standarts">
+            <h4>Професійні навички водія:</h4>
+            <ul class="border-bottomGray">
+                <li>активний стаж водіння не менше 5 років;</li>
+                <li>навички поточного ремонту автомобіля;</li>
+                <li>готовність до взаємовиручки;</li>
+                <li>чудове знання міста та області;</li>
+                <li>вільне користування функціоналом терміналу водія.</li>
+            </ul>
+        </div>
+        <div class="standarts">
+            <h4>Клієнтоорієнтованість водія:</h4>
+            <ul class="border-bottomGray">
+                <li>толерантний;</li>
+                <li>тактовний;</li>
+                <li>стриманий;</li>
+                <li>неконфліктний;</li>
+                <li>чесний;</li>
+                <li>виконавчий;</li>
+                <li>бажане мінімальне володіння англійською, польською, російською мовами. </li>
+            </ul>
+        </div>
+            
+        <div class="cyanmodal"> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target=".form-modal-md">Повідомити коли запрацює</button>
+        </div>
+    </div>
+  </div>
+</div>      
+      
+      
+      
+         <!-- FORM modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".form-modal-md">Modal FORM</button>-->
+
+<div class="modal fade form-modal-md" tabindex="-1" role="dialog" aria-labelledby="formSmallModalLabel">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
          <div class="col-sm-12 cyanmodal">    
-                            <h2>Почніть їздити дешевше</h2>
+                            <h2 class="border-bottomDarkCyan">Почніть їздити дешевше</h2>
                             <div class="media">
                                 <div class="media-left">
                                     <img class="media-object" src="img/prize.png">
@@ -448,32 +587,10 @@
         
     </div>
   </div>
-</div>      
-              
-          </div>
-      </section>
+</div>    
       
       
-      <footer> 
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4 hidden-sm hidden-xs">
-                      <a href="http://gathercar.com/">
-                        <img alt="GatherCar" src="img/logo.png">
-                      </a>
-                      <p class="white">Інноваційний сервіс таксі з попутниками у Львові</p>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                        <img alt="GatherCar" src="img/phoneWhite.png">
-                      <p>Телефон “Лінії підтримки”<br><a class="navbar-link phone" href="tel:+380977117765">+38097 7117765</a></p>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                      <img alt="GatherCar" src="img/map.png">
-                      <p>Адреса офісу:<br><a href="https://goo.gl/maps/Hwv64GCWLEG2" target="_blank" class="navbar-link">м.Львів, вул.В.Великого, 50/104</a></p>
-                  </div>
-              </div>
-          </div>
-      </footer>
+      
       
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
